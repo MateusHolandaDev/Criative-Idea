@@ -1,375 +1,196 @@
-/* **************************************************************************** */
-
-/* *********************Style da Página INDEX ********************* */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    font-family: 'Poppins';
 }
 
-body{
-    
+#footerprincipal{
+    margin-top: 1430px;
 }
 
-#btnLogin {
-    margin-right: 40px;
-    border: 2px solid;
-    font-size: 20px;
-    font-weight: 400%;
-}
-
-#iconsMidias {
-    margin-right: 10px;
-}
-
-footer {
-    text-decoration: none;
-}
-
-/* **************** Cards da página Index *************************** */
-
-.cardIndex {
-    background-color: #ffef0e;
-    overflow: hidden;
-    height: 230px;
-}
-
-.cardIndex:hover {
-    height: 430px;
-    transition: 0.5s;
-}
-
-.card-text {
-    color: #021b4d;
-    font-weight: 500;
-}
-
-#fotoIndex {
-    width: 120%;
-}
-
-/* 
-/************************** Banner inicial da pág Index *****************************/
-
-#bannerIndex {
-    width: 92%;
-    margin-left: 4%;
-    margin-top: 2%
-}
-
-
-/* ************************************************************************************ */
-
-/* *****************************Style da página OFICINAS ********************************/
-
-.cabecalho {
-    color: #e3f2fd;
-    justify-content: center;
-}
-
-#zoom-container {
-    cursor: pointer;
-    display: flex;
-    height: 2rem;
-    border-bottom: none;
-}
-.fundoViolao{
-    background-image: url(../img/violão.jpg);
+/* Estilização do body */
+body{ 
+    width: 100%;
+    height: 150vh;
+    background-color: #f0f1f1; 
     background-size: cover;
-    width: 50vw;
-    height: 40vh;
-    border: 0.5rem solid #021B4D;
-    border-radius: 4rem;
-    
+    background-repeat: no-repeat;
 }
-.fundoSopro{
-    background-image: url(../img/sopro.jpg);
-    background-size: cover;
-    width: 50vw;
-    height: 40vh;
-    border: 0.5rem solid #021B4D;
-    border-radius: 5rem;
-    
-}
-.fundoPercussao{
-    background-image: url(../img/percussão.jpg);
-    background-size: cover;
-    width: 50vw;
-    height: 40vh;
-    border: 0.5rem solid #021B4D;
-    border-radius: 5rem;
-    
-}
-.cantoRedondo{
-    border-radius: 1rem;
-}
-.corFonteAzul{
-    color: #021B4D;
-}
-.corFundoAzul{
-    background-color: #021b4d;
-}
-.corFonteAmarelo{
-    color: #ffef0e;
-}
-.corFundoAmarelo{
-    background-color: #ffef0e;
-}
-
-/* ********************* quem somos nós *************************** */
-
-#tituloPadrinhos {
-    color: #021b4d;
+/* Estilizando o h1 */
+h1{
+    color: white;
     text-align: center;
-    margin-bottom: 5%;
-}
-
-.textPad {
-    color: #021b4d;
-    font-weight: 500;
-    font-size: large;
-}
-
-/* ************************************************************************************ */
-
-/* *****************************Style da página Padrinhos******************************/
-
-
-/* ***************Patrocinadores******************* */
-
-#soulCode {
-    width: 50%;
-}
-
-#tnt {
-    width: 70%;
-}
-
-#patrocinadores {
-    color: #021b4d;
-    font-weight: 500;
-}
-
-/* ***************Patrocinadores******************* */
-
-.ctn1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    margin-left: 30px;
-}
-
-.row{
-    width: 100%;
-    /* margin-left: 20px; */
-}
-
-#carouselExampleControls{
-    width: 800px;
-}
-
-/* .imgCaroussel{
-    height: 400px;
-} */
-
-#soulCode {
-    width: 200px;
-    padding-right: 20px;
-}
-
-#tnt {
-    width: 200px;
-    height: 150px;
-    padding-top: 25px;
-    padding-left: 20px;
-    
-}
-
-#patrocinadores {
-    color: #021b4d;
-    font-weight: 500;
-}
-
-.row>*{
-    padding-right: 0;
-}
-
-.flex1{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.texto1{
-    padding-left: 60px;
-    padding-right: 20px;
-}
-
-#btn-padrinho{
+} 
+/*Estilizando a div principal do form*/
+.caixa{
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 760px;
-    left: 18%;
+    top: 50%; /*posicionando a div no centro*/
+    left: 50%; /*posicionando a div no centro*/
+    transform: translate(-50%,-50%);/*posicionando a div no centro*/
+    background-color: #ebb55f;
+    padding: 15px;
+    border-radius: 15px;
+    width: 600px;
+    margin-top: 464px;
+    box-shadow: 2px 2px 8px 3px rgb(46, 46, 46);
+}
+/* Estilização do fieldset */
+fieldset{
+    border: 3px solid #fb9c01;
+} 
+/* Estilização do input data de Nascimento */
+#data{
+    width: 150px;
+    height: 30px;
+    border: white;
+    border-radius: 5px; 
+    outline: none;
+}
+.label-float input{
+    width: 97%;
+    height: 30px;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0; /*Definindo borda 0*/
+    border-radius: 5px;
+    min-width: 180px;
+    font-size: 20px;
+    margin-top: 15px;
+} 
+/* Estilização dos parágrafos que contém label e input */
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 17.3px;
+}
+/* Estilização dos labels */
+.label-float label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -4;
+    transition: all .3s ease-out;
+    font-weight: bold;
+}
+/* Animação utilizando Css */
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #834b00;
+}
+/* Estilizando as labels dos inputs radio */
+#radio{
+    font-size: 20px;
+}
+/* Estilizando os botões */
+#botao{
     width: 200px;
-    height: 60px;
-    background-color: #FFEF0E;
+    height: 40px;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
+    margin: 20px;
+    background-image: linear-gradient(to left,#fd692f, #fb9c01);
+    color: white;
 }
-   
-   
-#btnpad2{
-    text-decoration: none;
-    color: #021b4d;
+#botao:hover{
+    box-shadow: 5px 5px 10px 2px #33333380;
 }
-
-.ctn2-btn{
-    width: 100%;
-    display: none;
-    justify-content: center;
-}
-
-#btn2-padrinho{
+/* Estilização data de nascimento */
+#nascimento{
     width: 200px;
-    height: 60px;
-    background-color: #FFEF0E;
     border: none;
-    border-radius: 40px;
-    margin-bottom: 80px;
-}
-#btn2-padrinho:hover, #btn-padrinho:hover{
-    transform: scale(1.2);
-    transition: transform 0.5s;
-}
+    height: 50px;
+    border-radius: 7px;
+    text-align: center ;
 
-@media screen and (max-width: 1200px){
-    .ctn1{
-        margin-left: 0;
+}
+/* Estilizando a cor de todos os labels */
+label{
+    font-family: 'Poppins';
+    color: black;
+}
+.genero{
+    font-weight: bold;
+}
+/* ----------------------------RESPONSIVIDADE--------------------------*/
+/* Responsividade Tablet */
+@media (max-width: 768px) {
+    body{
+        height: 180vh;
     }
-    #btn-padrinho{
-        display: none;
+    #form1 p{
+        font-size: 20px;
     }
-    .ctn2-btn{
-        display: flex;
+    #form1 {
+        width: 90%;
+        margin-left:25px ;
+        margin-top: 10px;
+    }
+    .caixa{
+        margin-top: 600px;
+        padding: 10px;
+        width: 70%;
     }
 }
-
-@media screen and (max-width: 991px){
-    .ctn1{
-        margin-top: 0;
+/* Dispostivo mobile Médio */
+@media screen and (max-width: 480px) {
+    body{
+        height: 190vh;
     }
-    #carouselExampleControls{
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px){
-    #soulCode{
-        padding-right: 0;
-    }
-    #tnt{
-        padding-top: 0;
-        padding-left: 0;
-    }
-    .texto1{
-        padding-right: 0;
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .textPad{
-        width: 400px;
-        text-align: justify; 
+    #form1  {
+        width: 280px;
+        margin-left:10px ;
         margin-top: 40px;
     }
-    .flex{
+    .caixa{
+        width: 300px;
+        height: 197vh;
+        padding: 5px;
+        margin-top: 700px;
+    }
+}
+@media screen and (max-width: 420px){
+    .caixa{
         display: flex;
         justify-content: center;
-    }
-    .textMedia{
-        text-align: justify; 
-        margin-top: 40px;
-        width: 450px;
+        height:190vh;
     }
 }
-
-/* ******************************* quem somos ************************* */
-#percus{
-width: 50%;
-}
-
-
-#btnInterno{
-    width: 100px;
-    height: 40px;
-    background-color: #021b4d;
-    color: #FFEF0E;
-    border-radius: 20px;
-    border: none;
-    font-weight: 500;
-}
-.modal-content{
-    background-color: #FFEF0E;
-    color: #021b4d;
-}
-#btnModal{
-    width: 100%;
-    height: 25%;
-    background-color: #021b4d;
-    color: #FFEF0E;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 40px;
-}
-
-#tituloIndex{
-    color: #021b4d;
-    font-weight: 500;
-    font-size: large;
-}
-#nossaHist{
-    color: #021b4d;
-    font-weight: 500;
-    font-size: large;
-}
-h2{
-    color:#021b4d
-}
-.tituloCards{
-    
-    color:#021b4d
-}
-#botaoModal{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-#depoimentos {
-    color: #021b4d;
-    font-weight: 500;
-    font-size:x-large;
-}
-
-.carousel-control-prev-icon{
-    background-image: url(../img/caret-left-fill.svg);
-}
-
-.carousel-control-next-icon{
-    background-image: url(../img/caret-right-fill.svg);
-}
-
-.d-block{
-    width: 100%;
-    display: flex !important;
-    justify-content: center;
-}
-
-@media (max-width: 436px) {
-    .imgCarrossel {
-        height: 17rem;
-        width: 200px;
+@media screen and (max-width: 380px){
+    .caixa{
+        height: 200vh;
     }
 }
-
-/* *********************LOGIN******************* */
+@media screen and (max-width: 360px){
+    .caixa{
+        margin-top: 600px;
+        height: 220vh;
+    }
+}
+/* Dispositivo mobile S */
+@media (max-width: 320px){
+    #form1{
+        width: 250px;
+        margin-left: 4.3px;
+    }
+    #botao{
+        width: 150px;
+        margin-left: 30px;
+       
+    } 
+    #form1 p{
+        font-size: 20px;
+    }
+    .caixa{
+        width:260px;
+        height: 198vh;
+        
+    }
+}
+@media screen and (max-width: 281px){
+    .caixa{
+        height: 210vh;
+    }
+}
