@@ -2,6 +2,8 @@
 $('#noite').click(function () {
     $('#noite').css('visibility', 'hidden');
     $('#dia').css('visibility', 'visible');
+    $("#menu-aside2").css("display", "block");
+    $("#menu-aside").css("display", "none");
     $('body').css({
         'backgroundColor': '#333333',
         'animation': '',
@@ -79,6 +81,8 @@ $('#noite').click(function () {
 $('#dia').click(function () {
     $('#dia').css('visibility', 'hidden');
     $('#noite').css('visibility', 'visible');
+    $("#menu-aside2").css("display", "none");
+    $("#menu-aside").css("display", "block");
     $('body').css({
         'backgroundColor': 'white',
         'animation': '',
@@ -533,7 +537,7 @@ $('#ferramenta-aside').click(function () {
 
 //ao clicar com o meu abert, o menu desaparece, com uso de Fadein, uso de animatins e overflow
 $('.desaparecer-aside').hide()
-$('#menu-aside').click(function(){
+$('#menu-aside, #menu-aside2').click(function(){
     
     $('.container-aside').css({
         animation: 'navAside 1s linear',
